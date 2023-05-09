@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  font-family: "Pretendard-Regular";
+}
+body {
+  background: radial-gradient(
+    96.74% 276.79% at 3.59% 5.28%,
+    #f0f4ff 0%,
+    #a5b6ee 100%
+  );
+}
+.wrapper {
+  width: 400px;
+  height: 360px;
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+  margin: 72px auto;
+  box-sizing: border-box;
+  padding-top: 40px;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  margin: 60px auto 0;
+}
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 44px;
+  top: 100px;
+  width: 312px;
+  height: 1px;
+  background: #3d538a;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+  border: 1px solid #354971;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.item.HRS::before {
+  position: absolute;
+  top: -20px;
+  content: "HRS";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #a5b6ee;
+}
+.item.MIN::before {
+  position: absolute;
+  top: -20px;
+  content: "MIN";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #a5b6ee;
+}
+.item.MIN::after {
+  content: "";
+  background: url(img/dot.png) no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 26px;
+  position: absolute;
+  right: 145px;
+}
+.item.SEC::after {
+  content: "";
+  background: url(img/dot.png) no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 26px;
+  position: absolute;
+  left: 145px;
+}
+
+.item.SEC::before {
+  position: absolute;
+  top: -20px;
+  content: "SEC";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #a5b6ee;
+}
+
+.flex-wrap {
+  position: relative;
+  margin-top: 67px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+button {
+  border: none;
+  background-color: inherit;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  gap: 5px;
+}
+p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8596bf;
+}
